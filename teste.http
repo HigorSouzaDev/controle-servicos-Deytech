@@ -1,0 +1,36 @@
+### Criar serviço
+POST http://localhost:8080/servicos
+
+### Listar serviços
+GET http://localhost:8080/servicos
+
+### Atualizar serviço
+PUT http://localhost:8080/servicos/7
+Content-Type: application/json
+
+### Excluir serviço
+DELETE http://localhost:8080/servicos/7
+
+{
+  "cliente": "João da Silva",
+  "equipamento": "Notebook Dell",
+  "problema": "Não liga",
+  "dataEntrada": "2026-09-10T20:00:00",
+  "responsavel": "Higor",
+  "status": "Em diagnóstico",
+  "valor": 150,
+  "observacoes": "Foi identificado problema na placa-mãe."
+}
+
+Content-Type: application/json
+
+{
+  "cliente": "João da Silva",
+  "equipamento": "Notebook Dell",
+  "problema": "Não liga",
+  "dataEntrada": "2026-09-10T20:00:00",
+  "responsavel": "Higor",
+  "status": "Aguardando diagnóstico",
+  "valor": 0,
+  "observacoes": "Cliente relatou que parou de ligar."
+}
